@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  main {
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 6.4rem 4.8rem;
+    width: min(42.8rem, 90%);
+    box-shadow: 0px 0.2rem 0.5rem rgba(0, 0, 0, 0.8);
+   
+  }
+
+  h1 {
+    
+    line-height: auto;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+
+  } 
+
+  p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.0rem;
+}
+
+.hide {
+  display: none;
+}
+
+.tremeImg:hover {
+  animation: treme 0.2s normal both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 1.0rem;}
+  50% {margin-left: 0;}
+  75% {margin-left: -3.0rem;}
+  100% {margin-left: 0;}
+}
+
+.layoutSorteTexto {
+  text-align: center; 
+  background: #E4EDF1;
+}
+
+button {
+      background: #FF9500;
+      color: #FFFFFF;
+      border-radius: 0.4rem;
+      padding: 1.6rem;
+}
+
+button:hover {
+  background: #ff9500a0;
+  color:  black;
+  cursor: pointer;
+
+}
